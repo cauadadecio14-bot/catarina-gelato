@@ -1,0 +1,236 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catarina Gelato Cavaleiros — Delivery</title>
+<meta name="description" content="Descubra o sabor da felicidade. Gelato artesanal, cafés, bolos e brownies com delivery em Macaé, RJ.">
+<meta name="theme-color" content="#faf5ea">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-fx" aria-hidden="true">
+  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+  <span class="grid"></span>
+</div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="wrap header-in">
+    <a href="#top" class="brand" aria-label="Catarina Gelato">
+      <img src="assets/logo.jpg" alt="Catarina Gelato">
+    </a>
+
+    <label class="search" aria-label="Buscar item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="search" type="search" placeholder="Busque por um item na loja" autocomplete="off">
+    </label>
+
+    <div class="actions">
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Abrir carrinho">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM1 2v2h2l3.6 7.6-1.35 2.45C5.09 14.35 5 14.67 5 15a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 20 4H5.21l-.94-2H1Z"/></svg>
+        <span class="badge" id="cartCount" hidden>0</span>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <div class="store-id reveal">
+        <div class="store-logo"><img src="assets/logo.jpg" alt=""></div>
+        <div>
+          <h1 class="store-name"><span>Catarina Gelato</span> Cavaleiros</h1>
+          <p class="store-addr">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Avenida Atlântica, 2436 - Cavaleiros, Macaé - RJ, CEP 27920-390
+          </p>
+          <p class="status" id="status"><i></i><span>Verificando…</span></p>
+        </div>
+      </div>
+
+      <p class="eyebrow reveal">Gelato artesanal · Delivery</p>
+      <h2 class="headline reveal">Descubra o <em>sabor</em> da <em>felicidade</em></h2>
+      <p class="lede reveal">Momentos felizes pedem Catarina Gelato. Potes de gelato, brownies e cafés chegando geladinhos até você, com entrega grátis em 20-30 min.</p>
+
+      <div class="cta-row reveal">
+        <a href="#cardapio" class="btn btn-primary">Ver cardápio
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#" data-wa="Olá! Vim pelo site e gostaria de fazer um pedido."><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2Zm5.8 14.1c-.25.7-1.45 1.33-2 1.4-.5.07-1.13.1-1.8-.12-.4-.13-.92-.3-1.58-.58-2.78-1.2-4.6-4-4.74-4.2-.14-.18-1.13-1.5-1.13-2.87 0-1.37.72-2.04.97-2.32.25-.28.55-.35.73-.35h.52c.17 0 .4-.06.62.48.23.55.78 1.9.85 2.04.07.14.1.3.02.48-.1.18-.14.3-.28.46-.14.16-.3.36-.42.48-.14.14-.28.3-.12.57.16.28.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.34.28.14.44.12.6-.07.17-.2.7-.8.88-1.08.18-.28.37-.23.62-.14.25.1 1.6.75 1.88.9.28.14.46.2.53.32.07.12.07.68-.18 1.38Z"/></svg> Falar no WhatsApp</a>
+      </div>
+
+      <ul class="stats reveal">
+        <li><b>20-30<small>min</small></b><span>Tempo de entrega</span></li>
+        <li><b>Grátis</b><span>Taxa de entrega</span></li>
+        <li><b>4,9<small>★</small></b><span>Avaliação dos clientes</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <div class="orbit o1"></div><div class="orbit o2"></div>
+      <div class="hero-card">
+        <img class="main" src="assets/ia/copos-trio.jpg" alt="Copos de gelato Catarina: chocolate, frutas vermelhas e pote Descubra o sabor da felicidade">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Gelato artesanal</span><i>✦</i><span>Potes de gelato</span><i>✦</i><span>Brownies</span><i>✦</i><span>Cafés</span><i>✦</i><span>Bebidas</span><i>✦</i><span>Momentos felizes</span><i>✦</i>
+    <span>Gelato artesanal</span><i>✦</i><span>Potes de gelato</span><i>✦</i><span>Brownies</span><i>✦</i><span>Cafés</span><i>✦</i><span>Bebidas</span><i>✦</i><span>Momentos felizes</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ============ DELIVERY BAR ============ -->
+<section class="wrap delivery-wrap">
+  <div class="delivery glass reveal">
+    <div class="d-mode">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M8 17h5.5l3-8H13M12 6h3M16.5 9 18.5 17M5.5 17 9 9H6"/></svg>
+      <b>Entrega</b>
+    </div>
+    <button class="d-addr" data-open-address>
+      <span class="d-meta">Entregar em 20-30 min <i>•</i> Grátis</span>
+      <span class="d-val" id="addrLabel">Selecionar endereço</span>
+      <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<main id="cardapio" class="wrap menu">
+  <div class="menu-head reveal">
+    <p class="eyebrow">Cardápio</p>
+    <h2 class="section-title">Escolha sua <em>felicidade</em></h2>
+  </div>
+
+  <figure class="pots-banner reveal">
+    <img src="assets/ia/potes-trio.jpg" alt="Potes de gelato Catarina de 120 ml, 150 ml e 240 ml">
+    <figcaption><b>Nossos potes</b><span>120 ml · 150 ml · 240 ml · 700 ml · 1,3 L</span></figcaption>
+  </figure>
+
+  <div class="tabs" id="tabs" role="tablist" aria-label="Categorias"></div>
+
+  <div id="sections"></div>
+  <p class="empty" id="empty" hidden>Nenhum item encontrado para sua busca.</p>
+</main>
+
+<!-- ============ GALERIA ============ -->
+<section class="wrap gallery" id="galeria">
+  <div class="menu-head reveal">
+    <p class="eyebrow">Galeria</p>
+    <h2 class="section-title">Momentos <em>felizes</em></h2>
+  </div>
+  <div class="g-grid">
+      <figure class="g-item reveal"><img src="assets/insta/ilustra-momentos.jpg" alt="Momentos felizes pedem Catarina Gelato" loading="lazy"><figcaption>Momentos felizes pedem Catarina Gelato</figcaption></figure>
+      <figure class="g-item reveal"><img src="assets/insta/foto-tropical.jpg" alt="Linha Tropical" loading="lazy"><figcaption>Linha Tropical</figcaption></figure>
+      <figure class="g-item reveal"><img src="assets/ia/copinho-bolas.jpg" alt="Copo Gelato Catarina com bolas de pistache e manga" loading="lazy"><figcaption>Pistache e manga</figcaption></figure>
+      <figure class="g-item reveal"><img src="assets/insta/ilustra-menina.jpg" alt="Catarina Gelato" loading="lazy"><figcaption>Catarina Gelato</figcaption></figure>
+      <figure class="g-item reveal"><img src="assets/insta/foto-maracuja.jpg" alt="O sabor inconfundível do maracujá" loading="lazy"><figcaption>O sabor inconfundível do maracujá</figcaption></figure>
+      <figure class="g-item reveal"><img src="assets/ia/cafe-brownie.jpg" alt="Café coado e brownie da casa" loading="lazy"><figcaption>Café e brownie da casa</figcaption></figure>
+      <figure class="g-item reveal"><img src="assets/insta/foto-colagem.jpg" alt="Gelato de maracujá com chocolate branco" loading="lazy"><figcaption>Maracujá com chocolate branco</figcaption></figure>
+      <figure class="g-item reveal"><img src="assets/insta/foto-bandeja.jpg" alt="Gelato de caramelo com chocolate" loading="lazy"><figcaption>Gelato de caramelo com chocolate</figcaption></figure>
+      <figure class="g-item reveal"><img src="assets/insta/foto-brownies.jpg" alt="Brownies da casa" loading="lazy"><figcaption>Brownies da casa</figcaption></figure>
+  </div>
+  <div class="g-cta reveal">
+    <a class="btn btn-ghost" href="https://www.instagram.com/catarinagelatocavaleiros/" target="_blank" rel="noopener">Siga @catarinagelatocavaleiros no Instagram</a>
+  </div>
+</section>
+<!-- ============ HOW ============ -->
+<section class="wrap how">
+  <figure class="pots-banner reveal" style="margin-bottom:24px">
+    <img src="assets/ia/delivery.jpg" alt="Sacola de delivery e copos de gelato Catarina">
+    <figcaption><b>Delivery Catarina</b><span>Gelato geladinho na sua porta em 20-30 min</span></figcaption>
+  </figure>
+  <div class="how-grid">
+    <article class="glass step reveal"><span>01</span><h3>Escolha</h3><p>Navegue pelo cardápio e monte seu pedido do seu jeito.</p></article>
+    <article class="glass step reveal"><span>02</span><h3>Informe o endereço</h3><p>Entregamos em Macaé sem taxa de entrega.</p></article>
+    <article class="glass step reveal"><span>03</span><h3>Receba geladinho</h3><p>Entrega em 20-30 min na sua porta.</p></article>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <img src="assets/logo.jpg" alt="Catarina Gelato">
+      <p>Descubra o sabor da felicidade.</p>
+    </div>
+    <div>
+      <h4>Catarina Gelato Cavaleiros</h4>
+      <p>Avenida Atlântica, 2436<br>Cavaleiros, Macaé, RJ<br>CEP 27920-390</p>
+    </div>
+    <div>
+      <h4>Delivery</h4>
+      <ul class="foot-list">
+        <li>Entrega em 20-30 min</li>
+        <li>Taxa de entrega grátis</li>
+      </ul>
+      <a class="btn btn-primary foot-wa" href="#" data-wa="Olá! Vim pelo site e gostaria de fazer um pedido."><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2Zm5.8 14.1c-.25.7-1.45 1.33-2 1.4-.5.07-1.13.1-1.8-.12-.4-.13-.92-.3-1.58-.58-2.78-1.2-4.6-4-4.74-4.2-.14-.18-1.13-1.5-1.13-2.87 0-1.37.72-2.04.97-2.32.25-.28.55-.35.73-.35h.52c.17 0 .4-.06.62.48.23.55.78 1.9.85 2.04.07.14.1.3.02.48-.1.18-.14.3-.28.46-.14.16-.3.36-.42.48-.14.14-.28.3-.12.57.16.28.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.34.28.14.44.12.6-.07.17-.2.7-.8.88-1.08.18-.28.37-.23.62-.14.25.1 1.6.75 1.88.9.28.14.46.2.53.32.07.12.07.68-.18 1.38Z"/></svg> Chamar no WhatsApp</a>
+      <a class="btn btn-ghost foot-wa" href="https://www.instagram.com/catarinagelatocavaleiros/" target="_blank" rel="noopener" style="margin-top:10px">@catarinagelatocavaleiros</a>
+    </div>
+    <div>
+      <h4>Horário de funcionamento</h4>
+      <ul class="hours" id="footHours"></ul>
+    </div>
+  </div>
+  <div class="wrap foot-base">© <span id="year"></span> Catarina Gelato. Todos os direitos reservados.</div>
+</footer>
+
+<!-- floating cart bar (mobile) -->
+<button class="cart-bar" id="cartBar" hidden>
+  <span class="cb-count" id="cbCount">0</span>
+  <span>Ver carrinho</span>
+  <b id="cbTotal">R$ 0,00</b>
+</button>
+
+<!-- ============ OVERLAYS ============ -->
+<div class="scrim" id="scrim" hidden></div>
+
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Carrinho">
+  <header class="drawer-head">
+    <h3>Seu carrinho</h3>
+    <button class="icon-btn" data-close aria-label="Fechar"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </header>
+  <div class="drawer-body" id="cartBody"></div>
+  <footer class="drawer-foot" id="cartFoot"></footer>
+</aside>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-card glass" id="modalCard"></div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
