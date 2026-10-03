@@ -10,7 +10,7 @@ const STORE = {
   hours: { 0: [12.25, 20.5], 1: [12.25, 20.5], 2: [12.25, 20.5], 3: [12.25, 20.5], 4: [12.25, 21.5], 5: [12.25, 21.5], 6: [12.25, 21.5] },
   deliveryFee: 0,    // grátis (iFood)
   eta: '20-30 min',
-  whatsapp: atob('NTUyMjk5MjEyMjY5Mg=='),   // número só é montado em tempo de execução
+  whatsapp: atob('NTUyMjk5ODc4MDA5Mw=='),   // número só é montado em tempo de execução
 };
 const DAYS = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
 const fmtH = h => `${String(Math.floor(h)).padStart(2, '0')}:${String(Math.round((h % 1) * 60)).padStart(2, '0')}`;
@@ -459,6 +459,7 @@ $$('.reveal').forEach((el, i) => { el.style.transitionDelay = (i % 6) * 70 + 'ms
 $('#year').textContent = new Date().getFullYear();
 renderTabs(); renderMenu(); renderStatus(); renderAddr(); renderUser(); renderCart(); updateBadges();
 setInterval(renderStatus, 60000);
+
 
 
 
